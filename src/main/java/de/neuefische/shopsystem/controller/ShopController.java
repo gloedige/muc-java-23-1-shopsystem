@@ -31,4 +31,8 @@ public class ShopController {
     public List<Order> listOrders(){
         return shopService.listOrders();
     }
+    @PostMapping("/orders")
+    public void addOrder (@RequestBody Order orderToAdd){
+        shopService.addOrder(orderToAdd);
+    }
 }
