@@ -4,9 +4,10 @@ import de.neuefische.shopsystem.repository.OrderRepository;
 import de.neuefische.shopsystem.model.Order;
 import de.neuefische.shopsystem.model.Product;
 import de.neuefische.shopsystem.repository.ProductRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class ShopService {
 
     // Abhängigkeiten -> Der ShopService BRAUCHT diese Repositories

@@ -3,6 +3,7 @@ package de.neuefische.shopsystem.repository;
 import de.neuefische.shopsystem.exception.ProductNotFoundException;
 import de.neuefische.shopsystem.model.Order;
 import de.neuefische.shopsystem.model.Product;
+import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
 
 // Repository - Klasse die auf gespeicherte Daten zugreift
 // Product Repository kümmert sich um ... Zugriff auf "Product" Daten
+@Repository
 public class ProductRepository {
 
     private final List<Product> products;
